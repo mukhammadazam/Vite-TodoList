@@ -27,7 +27,7 @@ const Todo = () => {
       return;
     setTodo([
       ...todo,
-      {
+      { 
         id: Date.now(),
         text: nTodo,
         email: nTodo1,
@@ -88,8 +88,15 @@ const Todo = () => {
             <h3 className='text-center row__item'>{element.conPassword}</h3>
             <h2 className='text-center row__item'>{element.password}</h2>
             <h1 className='text-center row__item'>author:Mukhammad A'zam</h1>
-            <button className=' row__btn rounded' onClick={() => delFun(element.id)}>
+            <button
+              className=' row__btn rounded'
+              onClick={() => delFun(element.id)}>
               delete
+            </button>
+            <button
+              className=' row__btn mt-2 rounded'
+              onClick={() => delFun(element.id)}>
+              editBtn
             </button>
           </div>
         ))}
